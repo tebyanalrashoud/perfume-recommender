@@ -1,18 +1,29 @@
 #  AI Fragrance Recommender Template
 
-A smart, plug-and-play fragrance recommendation system built with Flask, designed for perfume stores and brands. Users enter their favorite global perfumes, and the system suggests the most similar products from the local store catalog based on scent profile analysis.
+A beautifully engineered AI-powered perfume recommendation system that intelligently understands a user's favorite perfumes and finds the most compatible scent from a store's custom product catalog.
 
- <img src=" https://github.com/user-attachments/assets/a60747ce-a5ae-4d43-a294-31bf0873ed75" width="400" hight="400">
+Built with love using Python, Flask, NLP, and vector similarity modeling.
+
+
+ 
 ---
+ <img src=" https://github.com/user-attachments/assets/a60747ce-a5ae-4d43-a294-31bf0873ed75" width="300" hight="300">
 
 ## 🚀 Features
 
--  **Intelligent Matching** using TF-IDF + cosine similarity.
--  **Smart correction** of misspelled perfume names.
--  **Ready for deployment** as a template on any perfume brand.
--  **Brand integration** with customizable catalog.
--  **Elegant, modern frontend** with luxurious design.
+ Intelligent Scent Matching using NLP-based vector embeddings.
 
+ Fuzzy name correction for user-entered perfume names.
+
+ TF-IDF vectorization for scent semantics.
+
+ Cosine similarity ranking between user preferences and store products.
+
+ Top-1 recommendation tailored to the user’s fragrance profile.
+
+ Designed to be a template easily adapted for any perfume business.
+
+ Beautiful and elegant front-end inspired by luxury design.
 ---
 
 ##  How It Works
@@ -34,10 +45,22 @@ Converts the combination of input perfumes into a mean scent vector.
 
 4- The result: the top 1 fragrance from your catalog that best matches the user’s scent preferences, based on deep vector comparison.
 
-It's not guessing. It's semantic reasoning across scent dimensions.
+
 ---
 
 ## 📁 Folder Structure
+project/
+│
+├── app.py                     # Flask backend logic
+├── templates/
+│   └── index.html             # Elegant front-end interface
+├── model/
+│   ├── tfidf_vectorizer.pkl   # Pre-trained TF-IDF vectorizer
+│   ├── tfidf_matrix.pkl       # Matrix of global perfumes
+│   └── perfume_names.csv      # Global perfume names + accords
+├── data/
+│   └── store_products.csv     # Your store's perfume catalog
+├── requirements.txt           # All dependencies
 
 
  
